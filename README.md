@@ -1,7 +1,5 @@
 # Fine-Tuning YOLOv8 for Macaque Detection
 
-## Sample Predictions
-
 <img src="media/sample_pred.jpg" width="600">
 
 ### Environment setup
