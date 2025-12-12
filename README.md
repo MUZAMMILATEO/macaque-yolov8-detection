@@ -63,6 +63,15 @@ The script automatically selects the most recent training run from runs/detect/ 
 **Outputs:** Evaluation results (metrics + plots) are saved under `runs/detect/macaque_test_evaluation/{N}/`, where {N} matches the suffix of the training run used (e.g., if macaque_detection_run3 is used, results are saved to .../3/).
 
 
+## Pretrained Model (optional)
+A pretrained YOLOv8 model fine-tuned on the macaque dataset is available here:  
+https://drive.google.com/file/d/1wydUvUdF0YSkSkzloLkIi_26GNOZRf9H/view
+
+Download the file and place it under `runs/detect/macaque_detection_run/weights/best.pt`.
+
+_Note:_ Follow this step only if you directly want to run inference.
+
+
 ## Inference
 
 To run inference using the trained YOLOv8 model, use:
