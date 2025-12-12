@@ -1,6 +1,6 @@
 ## Sample Predictions
 
-![Test batch predictions](media/test_batch_pred.jpg)
+![Test batch predictions](media/sample_pred.jpg)
 
 ### Environment setup
 
