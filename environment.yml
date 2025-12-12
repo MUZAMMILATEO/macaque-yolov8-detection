@@ -1,0 +1,12 @@
+name: macaque-task
+channels:
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - requests
+  - pip
+
+  - pip:
+    - ultralytics==8.3.236

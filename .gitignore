@@ -1,0 +1,35 @@
+# ----------------------------------------------------------------------
+# 1. Environment & Python Artifacts
+# ----------------------------------------------------------------------
+# Conda environment folder (specific to user path)
+macaque-task/
+
+# Python compiled files
+*.pyc
+__pycache__/
+
+# macOS artifacts
+.DS_Store
+
+# ----------------------------------------------------------------------
+# 2. Dataset and Intermediate Data
+# ----------------------------------------------------------------------
+# Large downloaded archive file
+macaca_data_specific.zip
+
+# Full extracted data (~6.5 GB) - Users recreate this via setup_data.py
+macaque-dataset/
+
+# Fixed label dataset view
+macaque-dataset-yolo/ 
+
+# Temporary extraction directory from setup_data.py
+temp_extracted_data/
+
+# Ultralytics data cache files
+*.cache
+
+# ----------------------------------------------------------------------
+# 3. IDE/Editor Files (VS Code)
+# ----------------------------------------------------------------------
+.vscode/
