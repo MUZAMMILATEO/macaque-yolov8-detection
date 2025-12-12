@@ -1,3 +1,5 @@
+# Fine-Tuning YOLOv8 for Macaque Detection
+
 ## Sample Predictions
 
 ![Test batch predictions](media/sample_pred.jpg)
@@ -64,11 +66,6 @@ The script automatically selects the most recent training run from runs/detect/ 
 **Outputs:** Evaluation results (metrics + plots) are saved under `runs/detect/macaque_test_evaluation/{N}/`, where {N} matches the suffix of the training run used (e.g., if macaque_detection_run3 is used, results are saved to .../3/).
 
 
-## Evaluation Results
-
-![Evaluation results](media/results.png)
-
-
 ## Inference
 
 To run inference using the trained YOLOv8 model, use:
@@ -87,3 +84,18 @@ python infer_model.py test.jpg
 python infer_model.py test
 ```
 _Note:_ If no image name is provided, the script defaults to sample_image/sample.jpg.
+
+
+## Evaluation Results
+
+![Evaluation results](media/results.png)
+
+## 🙏 Acknowledgements
+
+This framework builds upon and extends prior open-source contributions for object detection:
+
+- **[Ultralytics](https://github.com/ultralytics/ultralytics)** 
+
+All rights and credits for the respective methods belong to their original authors.
+
+---
