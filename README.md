@@ -33,3 +33,15 @@ macaque-dataset/
 ```
 __Note:__ The test set is stored at the root level (macaque-dataset/test/)
 and is intentionally separated from the YOLO train/val structure.
+
+## Training and Validation
+To train the YOLOv8 model and perform validation on the macaque dataset, run:
+```bash
+python train_model.py
+```
+This script:
+- Converts the dataset labels to YOLO-compatible format (5-column annotations)
+- Prepares a YOLO-view dataset for training and validation
+- Trains a YOLOv8 model using transfer learning
+- Evaluates performance on the validation split
+- Saves model checkpoints and logs under ./root/runs/detect/

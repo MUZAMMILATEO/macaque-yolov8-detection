@@ -33,3 +33,12 @@ temp_extracted_data/
 # 3. IDE/Editor Files (VS Code)
 # ----------------------------------------------------------------------
 .vscode/
+
+# ----------------------------------------------------------------------
+# 4. Model Weights and Training Outputs
+# ----------------------------------------------------------------------
+# The entire output folder containing logs, validation images, and weights
+runs/
+
+# The downloaded model weights (will be downloaded by train_model.py)
+*.pt
