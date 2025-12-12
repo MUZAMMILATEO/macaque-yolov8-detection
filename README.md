@@ -50,7 +50,7 @@ This script:
 - Saves model checkpoints and logs under ./root/runs/detect/
 
 
-## Test Evaluation
+## Evaluation
 
 After training, evaluate the `latest trained model` on the held-out test split using:
 
