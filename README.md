@@ -86,9 +86,10 @@ python infer_model.py test
 _Note:_ If no image name is provided, the script defaults to sample_image/sample.jpg.
 
 
-## Evaluation Results
+## Training and validation performance
 
 ![Evaluation results](media/results.png)
+
 
 ## 🙏 Acknowledgements
 
