@@ -2,7 +2,7 @@
 
 ## Sample Predictions
 
-![Test batch predictions](media/sample_pred.jpg)
+<img src="media/sample_pred.jpg" width="600">
 
 ### Environment setup
 
