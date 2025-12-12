@@ -26,6 +26,9 @@ macaque-dataset-yolo/
 # Temporary extraction directory from setup_data.py
 temp_extracted_data/
 
+# Inference data files
+inference_results/
+
 # Ultralytics data cache files
 *.cache
 

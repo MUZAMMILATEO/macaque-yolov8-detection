@@ -45,3 +45,22 @@ This script:
 - Trains a YOLOv8 model using transfer learning
 - Evaluates performance on the validation split
 - Saves model checkpoints and logs under ./root/runs/detect/
+
+## Inference
+
+To run inference using the trained YOLOv8 model, use:
+
+```bash
+python infer_model.py [image_name]
+```
+
+- Place the image to be tested inside the `sample_image/` folder.
+- The image name can be provided with or without an extension (.jpg, .jpeg, .png).
+
+### Example
+```bash
+python infer_model.py
+python infer_model.py test.jpg
+python infer_model.py test
+```
+_Note:_ If no image name is provided, the script defaults to sample_image/sample.jpg.
