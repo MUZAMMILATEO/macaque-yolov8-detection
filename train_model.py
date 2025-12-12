@@ -14,6 +14,18 @@ BATCH_SIZE = 16
 PROJECT_NAME = "macaque_detection_run"
 
 
+def choose_device():
+    """
+    Chooses GPU if available, otherwise CPU.
+    Ultralytics accepts device=0 for GPU 0, or device='cpu'.
+    """
+    try:
+        import torch
+        return 0 if torch.cuda.is_available() else "cpu"
+    except Exception:
+        return "cpu"
+
+
 def _convert_label_file(src_lbl: Path, dst_lbl: Path) -> int:
     """
     Convert label file from 6 columns:
@@ -158,13 +170,16 @@ def train_yolov8_model():
     print(f"\nStarting training on: {fixed_yaml}")
     print(f"Training parameters: Epochs={EPOCHS}, Batch Size={BATCH_SIZE}")
 
+    device = choose_device()
+    print(f"Training device: {device}")
+
     results = model.train(
         data=str(fixed_yaml),
         epochs=EPOCHS,
         imgsz=640,
         batch=BATCH_SIZE,
         name=PROJECT_NAME,
-        device=0  # set to "cpu" if needed
+        device=device  # set to "cpu" if needed
     )
 
     print("\n✅ Training completed successfully.")

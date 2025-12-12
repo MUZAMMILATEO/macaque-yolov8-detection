@@ -42,3 +42,13 @@ runs/
 
 # The downloaded model weights (will be downloaded by train_model.py)
 *.pt
+
+
+# ----------------------------------------------------------------------
+# 5. Sample images for inference
+# ----------------------------------------------------------------------
+# Ignore everything in sample_image
+sample_image/*
+
+# But keep the default sample image
+!sample_image/sample.jpg
