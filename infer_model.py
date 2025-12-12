@@ -13,7 +13,7 @@ RUN_PREFIX = "macaque_detection_run"
 RUNS_DIR = Path("runs") / "detect"
 
 # Folder containing sample images for inference
-SAMPLE_DIR = Path("sample_image")
+SAMPLE_DIR = Path("sample-image")
 
 # Default sample image (must exist in SAMPLE_DIR)
 DEFAULT_SAMPLE_NAME = "sample.jpg"

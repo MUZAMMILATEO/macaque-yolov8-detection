@@ -48,7 +48,7 @@ runs/
 # 5. Sample images for inference
 # ----------------------------------------------------------------------
 # Ignore everything in sample_image
-sample_image/*
+sample-image/*
 
 # But keep the default sample image
-!sample_image/sample.jpg
+!sample-image/sample.jpg
