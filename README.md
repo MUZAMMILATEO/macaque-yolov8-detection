@@ -1,3 +1,11 @@
+## Sample Predictions
+
+![Test batch predictions](media/test_batch_pred.jpg)
+
+## Evaluation Results
+
+![Evaluation results](media/results.png)
+
 ### Environment setup
 
 Create base environment: 
