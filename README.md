@@ -46,6 +46,20 @@ This script:
 - Evaluates performance on the validation split
 - Saves model checkpoints and logs under ./root/runs/detect/
 
+
+## Test Evaluation
+
+After training, evaluate the `latest trained model` on the held-out test split using:
+
+```bash
+python eval_model.py
+```
+
+The script automatically selects the most recent training run from runs/detect/ (e.g. macaque_detection_run, macaque_detection_run2, macaque_detection_run3, ...).
+
+**Outputs:** Evaluation results (metrics + plots) are saved under `runs/detect/macaque_test_evaluation/{N}/`, where {N} matches the suffix of the training run used (e.g., if macaque_detection_run3 is used, results are saved to .../3/).
+
+
 ## Inference
 
 To run inference using the trained YOLOv8 model, use:
@@ -64,16 +78,3 @@ python infer_model.py test.jpg
 python infer_model.py test
 ```
 _Note:_ If no image name is provided, the script defaults to sample_image/sample.jpg.
-
-
-## Test Evaluation
-
-After training, evaluate the `latest trained model` on the held-out test split using:
-
-```bash
-python eval_model.py
-```
-
-The script automatically selects the most recent training run from runs/detect/ (e.g. macaque_detection_run, macaque_detection_run2, macaque_detection_run3, ...).
-
-**Outputs:** Evaluation results (metrics + plots) are saved under `runs/detect/macaque_test_evaluation/<N>/`, where <N> matches the suffix of the training run used (e.g., if macaque_detection_run3 is used, results are saved to .../3/).
