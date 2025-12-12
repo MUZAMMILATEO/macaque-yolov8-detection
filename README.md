@@ -2,10 +2,6 @@
 
 ![Test batch predictions](media/test_batch_pred.jpg)
 
-## Evaluation Results
-
-![Evaluation results](media/results.png)
-
 ### Environment setup
 
 Create base environment: 
@@ -66,6 +62,11 @@ python eval_model.py
 The script automatically selects the most recent training run from runs/detect/ (e.g. macaque_detection_run, macaque_detection_run2, macaque_detection_run3, ...).
 
 **Outputs:** Evaluation results (metrics + plots) are saved under `runs/detect/macaque_test_evaluation/{N}/`, where {N} matches the suffix of the training run used (e.g., if macaque_detection_run3 is used, results are saved to .../3/).
+
+
+## Evaluation Results
+
+![Evaluation results](media/results.png)
 
 
 ## Inference
