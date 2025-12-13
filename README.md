@@ -1,4 +1,6 @@
 # Fine-Tuning YOLOv8 for Macaque Detection
+**Motivation:** YOLOv8 was chosen because it provides a strong trade-off between accuracy, speed, and ease of deployment, and allows rapid fine-tuning via transfer learning with minimal code.
+
 <img src="media/sample_pred.jpg" width="400"><img src="media/sample_pred_01.jpg" width="400"><img src="media/sample_pred_02.jpg" width="400"><img src="media/sample_pred_03.jpg" width="400">
 
 ### Environment setup
