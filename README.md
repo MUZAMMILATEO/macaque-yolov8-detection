@@ -3,7 +3,7 @@
 
 <img src="media/sample_pred.jpg" width="400"><img src="media/sample_pred_01.jpg" width="400"><img src="media/sample_pred_02.jpg" width="400"><img src="media/sample_pred_03.jpg" width="400">
 
-### Environment setup
+### Environment setup [Tested on WSL (Ubuntu 20.04)]
 
 Create base environment: 
 ```bash
@@ -11,7 +11,7 @@ conda env create -f environment.yml
 conda activate macaque-task
 ```
 
-Install PyTorch (choose one):
+Install PyTorch:
 ```bash
 # GPU (CUDA 11.8)
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
